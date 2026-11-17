@@ -1,6 +1,6 @@
-# Portfolio website
+# ZWebzz website
 
-Personal portfolio and consulting site for Zech Heneveld. Plain HTML, CSS and a little JavaScript: no build step.
+Portfolio and consulting site for ZWebzz (Zech Heneveld). Plain HTML, CSS and a little JavaScript: no build step.
 
 ## Run locally
 
