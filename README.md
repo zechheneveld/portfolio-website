@@ -14,7 +14,7 @@ npx serve .
 
 - **Projects, services, process:** `index.html` (each project is one `<article class="project">`; `data-tags` drives the filter chips)
 - **Look and feel:** `styles.css` (colours are variables at the top)
-- **Contact links:** search `index.html` for `TODO`
+- **Contact links:** the `#contact` section of `index.html`
 
 ## Deploy
 
