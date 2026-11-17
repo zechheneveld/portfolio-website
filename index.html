@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zech Heneveld — Software Engineer & Consultant</title>
+  <meta name="description" content="Zech Heneveld builds production software end to end: marketplaces, e-commerce, mobile apps, education platforms and AI-assisted engineering tools. Available for consulting.">
+  <meta property="og:title" content="Zech Heneveld — Software Engineer & Consultant">
+  <meta property="og:description" content="Full-stack products, payments, mobile apps and AI-assisted engineering tools, shipped to production.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>ZH</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand"><span class="mark">ZH</span> Zech Heneveld</a>
+      <nav aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn btn-small">Work with me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Software engineer · Independent consultant</p>
+        <h1>I build software that ships, and keeps working after it does.</h1>
+        <p class="lede">
+          Marketplaces with escrow payments, e-commerce stores with a built-in CRM, cross-platform mobile apps,
+          multi-tenant education platforms, and the release and review tooling that keeps an engineering team moving.
+          I take products from a blank repo to production and stay accountable for how they run.
+        </p>
+        <div class="cta-row">
+          <a href="#contact" class="btn">Start a conversation</a>
+          <a href="#work" class="btn btn-ghost">See the work →</a>
+        </div>
+        <ul class="facts" aria-label="At a glance">
+          <li><strong>7</strong><span>production-grade projects featured</span></li>
+          <li><strong>Web · iOS · Android</strong><span>one engineer, every surface</span></li>
+          <li><strong>Stripe · Supabase · AWS</strong><span>payments, data and infrastructure</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects I've designed and built</h2>
+          <p>Each one is real software with real users or real stakes: money moving, data that has to stay private, or a production deploy that can't go wrong.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="product">Products</button>
+          <button class="chip" data-filter="mobile">Mobile</button>
+          <button class="chip" data-filter="tooling">Engineering tooling</button>
+          <button class="chip" data-filter="ai">AI</button>
+        </div>
+
+        <div class="projects">
+
+          <!-- CleanrConnect -->
+          <article class="project featured" data-tags="product mobile">
+            <div class="project-visual v-teal" aria-hidden="true">
+              <div class="flow">
+                <span>Posted</span><span>Requested</span><span>Escrow paid</span><span>Checked in</span><span>Approved</span><span class="done">Paid out</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="kind">Two-sided marketplace · Founder &amp; sole engineer</p>
+              <h3>CleanrConnect</h3>
+              <p class="summary">An on-demand cleaning marketplace for iOS, Android and web. Property owners post a job, background-checked cleaners request it, and payment sits in escrow until the owner approves photo-verified work.</p>
+              <ul class="highlights">
+                <li><strong>Escrow and payouts</strong> with Stripe Checkout, manual-capture deposit holds and Stripe Connect transfers to cleaners.</li>
+                <li><strong>Trust and safety</strong>: Checkr background checks, before/after photos per task, and fuzzed job locations until a cleaner is booked.</li>
+                <li><strong>A full job lifecycle</strong> as a state machine, with booking deadlines, cancellation and forfeit rules enforced by scheduled jobs in Postgres.</li>
+                <li><strong>One source of truth for money math</strong>, shared by the mobile app and the server, so fees and refunds can't drift apart.</li>
+              </ul>
+              <ul class="stack"><li>Expo / React Native</li><li>TypeScript</li><li>Supabase</li><li>Postgres RLS</li><li>Edge Functions</li><li>Stripe Connect</li><li>Checkr</li><li>Astro</li></ul>
+            </div>
+          </article>
+
+          <!-- Cues4Success -->
+          <article class="project featured" data-tags="product">
+            <div class="project-visual v-indigo" aria-hidden="true">
+              <div class="grid-mock">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="kind">EdTech SaaS platform · Lead contributor on a team of seven</p>
+              <h3>Cues4Success</h3>
+              <p class="summary">A character-education and social-emotional learning platform used by schools and families: lessons, behavior skills, grading, group results and licensed premium resources, all managed through a headless CMS.</p>
+              <ul class="highlights">
+                <li><strong>Over two years of continuous delivery</strong> and 1,100+ commits, as one of the project's two most active engineers.</li>
+                <li><strong>Licensing and entitlements</strong>: migrated user access from a document store to a relational model, with equivalence checks proving no one lost or gained access.</li>
+                <li><strong>Roster provisioning and invitations</strong> for schools, plus transactional email and analytics reporting.</li>
+                <li><strong>Spec-driven development</strong>: 16 capability specs covering auth, communities, lessons, licensing and more.</li>
+              </ul>
+              <ul class="stack"><li>Next.js</li><li>Payload CMS</li><li>Postgres</li><li>Firebase</li><li>Resend</li><li>PostHog</li><li>Vercel</li></ul>
+            </div>
+          </article>
+
+          <!-- Roots4Fruits -->
+          <article class="project" data-tags="product">
+            <div class="project-visual v-green" aria-hidden="true">
+              <div class="cal"><span></span><span></span><span class="on"></span><span></span><span></span><span></span><span class="on"></span><span></span><span></span><span></span><span></span><span class="on"></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <p class="kind">E-commerce + CRM · Client project</p>
+              <h3>Roots4Fruits</h3>
+              <p class="summary">The store, marketing site and back office for a character-education publisher. One app replaces a storefront, a CRM and a scheduling tool.</p>
+              <ul class="highlights">
+                <li><strong>Stripe Checkout</strong> with webhooks that record every order, refund and digital download.</li>
+                <li><strong>Built-in CRM</strong>: contacts, timeline, notes, tasks, orders and CSV export.</li>
+                <li><strong>Demo scheduler</strong> with staff-managed availability, calendar invites and self-service reschedule links.</li>
+              </ul>
+              <ul class="stack"><li>Next.js 16</li><li>Tailwind CSS</li><li>Drizzle ORM</li><li>Neon Postgres</li><li>Stripe</li><li>Vercel</li></ul>
+            </div>
+          </article>
+
+          <!-- Two Spoons -->
+          <article class="project" data-tags="product mobile">
+            <div class="project-visual v-rose" aria-hidden="true">
+              <div class="phones"><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <p class="kind">Consumer mobile app · Founder &amp; sole engineer</p>
+              <h3>Two Spoons</h3>
+              <p class="summary">A couples app that turns relationship research into small daily habits. Each partner uses their own phone, and answers sync between them in real time.</p>
+              <ul class="highlights">
+                <li><strong>Privacy enforced by the server</strong>, not just the UI: private answers stay private through row-level security.</li>
+                <li><strong>Hundreds of pieces of content</strong> (questions, cards, games and guided programs) grounded in published research.</li>
+                <li><strong>Native features</strong>: Sign in with Apple, push notifications, Face ID / fingerprint lock and partner invite codes.</li>
+              </ul>
+              <ul class="stack"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li><li>EAS</li></ul>
+            </div>
+          </article>
+
+          <!-- Release Manager -->
+          <article class="project" data-tags="tooling">
+            <div class="project-visual v-slate" aria-hidden="true">
+              <pre class="term">$ release-manager release app -t hotfix
+✓ plan: 4 libraries, 1 application
+✓ lib-core 2.3.1  tagged · pipeline ok
+✓ lib-api  1.8.0  tagged · pipeline ok
+? Deploy app 1.4.5 to PRODUCTION? <b>y</b>
+✓ environment Ready</pre>
+            </div>
+            <div class="project-body">
+              <p class="kind">Internal developer platform · Enterprise engineering team</p>
+              <h3>Release Manager</h3>
+              <p class="summary">A CLI and local web app that turns a multi-hour, error-prone release day into one approved command, for several Java products and the internal libraries they depend on.</p>
+              <ul class="highlights">
+                <li><strong>Dependency-aware planning</strong>: walks every Maven POM, releases internal libraries in the right order, and shows the full plan before touching anything.</li>
+                <li><strong>Idempotent and resumable</strong>: each step checks real state first, so a failed run picks up where it left off.</li>
+                <li><strong>Approval-gated production deploys</strong> to AWS Elastic Beanstalk, plus scheduled releases.</li>
+              </ul>
+              <ul class="stack"><li>Java 25</li><li>Maven</li><li>picocli</li><li>GitLab API</li><li>AWS SDK</li></ul>
+            </div>
+          </article>
+
+          <!-- Code Review Desk -->
+          <article class="project" data-tags="tooling ai">
+            <div class="project-visual v-amber" aria-hidden="true">
+              <div class="findings">
+                <span><i class="sev high"></i>Unvalidated input reaches query</span>
+                <span><i class="sev med"></i>Missing test for edge case</span>
+                <span><i class="sev low"></i>Naming inconsistency</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="kind">AI engineering tool · Enterprise engineering team</p>
+              <h3>Code Review Desk</h3>
+              <p class="summary">Senior-level AI code reviews on merge requests, checked against the linked issue's requirements, with a human signing off before a single comment is posted.</p>
+              <ul class="highlights">
+                <li><strong>Requirements-aware</strong>: pulls linked issues and reviews the diff against what was actually asked for.</li>
+                <li><strong>Human in the loop</strong>: every finding can be edited, approved or rejected; only approved findings are published as inline comments.</li>
+                <li><strong>Safe by design</strong>: read-only AI tools, throwaway worktrees, localhost-only server, and tokens kept out of repo config.</li>
+              </ul>
+              <ul class="stack"><li>Node.js</li><li>Claude</li><li>GitLab API</li><li>Git worktrees</li></ul>
+            </div>
+          </article>
+
+          <!-- AutoInvest -->
+          <article class="project" data-tags="ai">
+            <div class="project-visual v-sky" aria-hidden="true">
+              <svg viewBox="0 0 200 80" class="spark"><polyline points="0,60 20,55 40,58 60,44 80,48 100,36 120,40 140,28 160,32 180,20 200,24" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><polyline points="0,62 20,60 40,57 60,56 80,52 100,52 120,48 140,46 160,44 180,42 200,40" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4" opacity=".5"/></svg>
+            </div>
+            <div class="project-body">
+              <p class="kind">Research harness · Personal R&amp;D</p>
+              <h3>AutoInvest</h3>
+              <p class="summary">A disciplined experiment to test whether a five-model AI ensemble has any real predictive edge in markets, for about $6 a month, before a single dollar is at risk.</p>
+              <ul class="highlights">
+                <li><strong>Pre-committed success criteria</strong> and a 90-day no-tweaking rule, so the result can't be rationalised after the fact.</li>
+                <li><strong>Four parallel arms</strong> (AI, benchmark, random and always-buy) plus confidence calibration checks.</li>
+                <li><strong>Advisory only by construction</strong>: no trading client exists in the codebase, and a deterministic risk gate sits between the models and the ledger.</li>
+              </ul>
+              <ul class="stack"><li>Python</li><li>SQLite</li><li>LLM ensemble</li><li>Simulation</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section alt" id="services">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Consulting</p>
+          <h2>How I can help</h2>
+          <p>I work best with founders and small teams who need a senior engineer who can own an outcome, not just close tickets.</p>
+        </header>
+        <div class="services">
+          <div class="service">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v10H4zM2 19h20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>MVP to production</h3>
+            <p>Take an idea to a launched web or mobile product: architecture, build, deployment and the boring parts that make it trustworthy.</p>
+          </div>
+          <div class="service">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>Payments &amp; marketplaces</h3>
+            <p>Stripe Checkout, subscriptions, escrow, Connect payouts, refunds and webhooks, designed so the money math is correct and auditable.</p>
+          </div>
+          <div class="service">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>AI in your workflow</h3>
+            <p>Practical AI tooling with a human in the loop: code review, internal assistants and automation that your team can actually trust.</p>
+          </div>
+          <div class="service">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Release &amp; DevOps automation</h3>
+            <p>CI/CD pipelines, release orchestration and cloud deploys on AWS, Vercel or Supabase, with approvals where they matter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Process</p>
+          <h2>What working together looks like</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="num">01</span>
+            <h3>Discovery call</h3>
+            <p>A free 30-minute conversation about your goals, constraints and timeline. You'll leave with an honest read on what it takes, even if that isn't me.</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h3>Written scope</h3>
+            <p>A short proposal with deliverables, milestones and a fixed price or a capped estimate. No surprises.</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h3>Build in the open</h3>
+            <p>Working software every week, in your repo, with a running demo. You can see progress, not just hear about it.</p>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <h3>Hand-off you can live with</h3>
+            <p>Documentation, tests and a walkthrough so your team owns it. Ongoing support is available if you want it.</p>
+          </li>
+        </ol>
+
+        <div class="principles">
+          <div><h3>Specs before code</h3><p>Agreed behaviour is written down first, so "done" means the same thing to both of us.</p></div>
+          <div><h3>Safe by default</h3><p>Least-privilege access, server-enforced privacy, and approvals in front of anything irreversible.</p></div>
+          <div><h3>You own everything</h3><p>Your repo, your accounts, your infrastructure. No lock-in to me.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Have a project in mind?</h2>
+          <p>Tell me what you're building and where you're stuck. I reply within two business days.</p>
+        </div>
+        <div class="contact-actions">
+          <!-- TODO: replace with your public contact email -->
+          <a class="btn btn-light" href="mailto:hello@example.com?subject=Project%20inquiry">Email me</a>
+          <a class="btn btn-outline-light" href="https://github.com/zechheneveld" target="_blank" rel="noopener">GitHub</a>
+          <!-- TODO: add your LinkedIn URL -->
+          <a class="btn btn-outline-light" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Zech Heneveld</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
